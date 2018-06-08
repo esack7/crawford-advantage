@@ -24,20 +24,20 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
-    publicPath: '/public/'
+    publicPath: '/public/',
   },
   devServer: {
     hot: true,
     publicPath: '/public/',
-    historyApiFallback: true
+    historyApiFallback: true,
   },
   resolve: {
-    extensions: ['.js', '.jsx', 'json']
+    extensions: ['.js', '.jsx', 'json'],
   },
   stats: {
     colors: true,
     reasons: true,
-    chunks: true
+    chunks: true,
   },
   mode,
   module: {
@@ -47,13 +47,13 @@ module.exports = {
         test: /\.jsx?$/,
         loader: 'eslint-loader',
         exclude: /node_modules/,
-        query: { compact: false }
+        query: { compact: false },
       },
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',
-        query: { compact: false }
-      }
-    ]
-  }
+        query: { compact: false },
+      },
+    ],
+  },
 };
