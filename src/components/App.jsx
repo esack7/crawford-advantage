@@ -1,8 +1,9 @@
 import React from 'react';
+import { Title } from '../style/styles';
 
 const App = () => (
   <div>
-    <h1>Hello World!!!</h1>
+    <Title>Future website for Crawford Advantage Solutions</Title>
   </div>
 );
 
