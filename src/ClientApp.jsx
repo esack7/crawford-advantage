@@ -1,9 +1,16 @@
 import React from 'react';
 import { render } from 'react-dom';
 import App from './components/App';
+import { BaseStyles, AppContain } from './style/styles';
 
 const renderApp = () => {
-  render(<App />, document.getElementById('app'));
+  BaseStyles();
+  render(
+    <AppContain>
+      <App />
+    </AppContain>,
+    document.getElementById('app')
+  );
 };
 
 renderApp();
